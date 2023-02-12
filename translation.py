@@ -1,145 +1,108 @@
-
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
-
-START_MESSAGE = '''Hello, {}
-I Am mdiskshortx.in, Bulk Link Converter. I Can Convert Links Directly From Your mdiskshortx Account,
-    
-1. Go To 👉 https://mdiskshortx.in/member/tools/api  
-2. Than Copy API Key
-3. Than Type /api than give a single space and than paste your API Key (see example to understand more...)
-/api(space)API Key 
-(See Example.👇)
-Example: /api 5bc1058c2060d4247a90a1cc1d2aa829918ba08a
-➕ Hit 👉 /Features To Know More Features Of This Bot.
-💁‍♀️ Hit 👉 /help To Get Help.
-➕ Hit 👉 /channel Command To Get Help About Adding your channel to bot.
-➕ Hit 👉 /footer To Get Help About Adding your Custom Footer to bot.
-If You Want Any Other Shortner Link Converter Bot Instead Of Shortnerfly than contact at 👉 @Mr_Rahul_Tk (all shortners support available.)
+START_MESSAGE = '''👋Hello, {}
+𝗜 𝗖𝗮𝗻 𝗖𝗼𝗻𝘃𝗲𝗿𝘁 𝗟𝗶𝗻𝗸 𝗧𝗼 𝗦𝗵𝗼𝗿𝘁𝗟𝗶𝗻𝗸. 𝗦𝗲𝗻𝗱 𝗠𝗲 𝗔𝗻𝘆 𝗣𝗼𝘀𝘁 𝗪𝗶𝘁𝗵 𝗟𝗶𝗻𝗸𝘀 𝗔𝗻𝗱 𝗜 𝗪𝗶𝗹𝗹 𝗦𝗵𝗼𝗿𝘁𝗲𝗻 𝗔𝗹𝗹 𝗟𝗶𝗻𝗸𝘀 𝗜𝗻 𝗜𝘁 𝗖𝗼𝗻𝘃𝗲𝗿𝘁 𝘁𝗼 EarnSpace.
+ℹ️ 𝗔𝗻𝗱 𝗵𝗼𝘄 𝘁𝗼 𝘂𝘀𝗲 𝘁𝗵𝗶𝘀 𝗯𝗼𝘁 𝗮𝗻𝗱 𝗰𝗼𝗺𝗺𝗮𝗻𝗱 𝘀𝗼 𝘄𝗮𝘁𝗰𝗵 𝗺𝘆 𝘃𝗶𝗱𝗲𝗼.
 '''
 
-HELP_MESSAGE = '''Hello, {}
-I Am mdiskshortx,in, Bulk Link Converter Bot. I Can Convert Links Directly From Your mdiskshort Account,
-    
-1. Go To 👉 https://mdiskshortx.in/member/tools/api  
-2. Than Copy API Key
-3. Than Type /api than give a single space and than paste your API Key (see example to understand more...)
-/api(space)API Key 
-(See Example.👇)
-Example: /api 5bc1058c2060d4247a90a1cc1d2aa829918ba08a 
-➕ Hit 👉 /Features To Know More Features Of This Bot.
-💁‍♀️ Hit 👉 /help To Get Help.
-➕ Hit 👉 /channel Command To Get Help About Adding your channel to bot.
-➕ Hit 👉 /footer To Get Help About Adding your Custom Footer to bot.
-If You Want Any Other Shortner Link Converter Bot Instead Of ""mdiskshortx** than contact at 👉 @Mr_Rahul_Tk (all shortners support available.)
+
+HELP_MESSAGE = '''
+🤝 Help and bot not working Then contact me :-@earnspace_bot @nitish7691
+ℹ️ And how to use this bot and command so watch my video.
+:-
 '''
 
-ABOUT_TEXT = '''**Hey! My name is @Mdiskshortx_bot . I am mdiskshortx  Link Converter Bot.
-⚡️Features⚡️
-• I can Convert any links or posts to your mdiskshort .in / post. (Button Links Posts, Hidden links/Hyperlinks All Are Supported)
-• I Can auto add custom footer text to your every post. Hit 👉 /footer To know more...
-• I Can auto add custom Header text to your every post. Hit 👉 /Header To know more...
-• I Can replace / remove other's channel links with your channel link. Hit 👉 /channel To know More...
-• I Can Automatically Replace Your *Banner Image To images in the post. Hit  👉/Banner To Know More... 
-• No need to share password or email to convert links.
- Anyone who want to use any **other shortner instead of ShortnerFly than contact at 👉 @Mr_Rahul_Tk (all shortners support available.)
-Click On Custom Alias To Create Custom Link
-'''
 
-CUSTOM_ALIAS_MESSAGE = """For Custom Alias, [link] | [custom_alias], Send in this format
-This feature works only in private mode only
-Ex: https://t.me/mdisk_shortx | mdiskshort"""
-
-
-ADMINS_MESSAGE = """
-List of Admins who has access to this Bot
-{admin_list}
+ABOUT_TEXT = """
+📍 My all bot settings in bot command and my most best command list.
+/header - set header text and click on command check out more info.
+/footer - set footer text and click on command check out more info.
+/username - set username and click on command check out more info.
+/banner_image - set banner img and click on command check out more info.
+/me - your account information and on|off all settings.
+ℹ️ And how to use this bot and command so watch my video.
+:-
 """
 
-ABOUT_REPLY_MARKUP = InlineKeyboardMarkup([
-
-    [
-        InlineKeyboardButton('Custom Alias', callback_data=f'alias_conf')
-        
-    ],
-
-
-])
 
 HELP_REPLY_MARKUP = InlineKeyboardMarkup([
 
     [
-        InlineKeyboardButton('More Features', callback_data=f'about_command')
+        InlineKeyboardButton('🏠 Home', callback_data='start_command')
+    ]
+])
+
+
+ABOUT_REPLY_MARKUP = InlineKeyboardMarkup([
+    [
+        InlineKeyboardButton('Home', callback_data=f'start_command'),
+        InlineKeyboardButton('Help', callback_data=f'help_command')
+    ],
+    [
+        InlineKeyboardButton('❌ Close', callback_data='delete')
+    ]
+])
+
+START_MESSAGE_REPLY_MARKUP  = InlineKeyboardMarkup([
+    [
+        InlineKeyboardButton('Help', callback_data=f'help_command'),
         
+    ],
+        [
+        InlineKeyboardButton('⚙️ Settings', callback_data='about_command'),
+        InlineKeyboardButton('❤️ Channel', url='https://t.me/earnspaceofficial')
+    ],
+            [
+        InlineKeyboardButton('♉️ Connect To Earnspace', url='https://earnspace.in/member/tools/api'),
     ],
 
 
 ])
 
-START_MESSAGE_REPLY_MARKUP  = InlineKeyboardMarkup([
-    [
-        InlineKeyboardButton('Get Api', url=f'https://mdiskshortx.in/member/tools/api')
-    ]
-])
-
-
 
 BACK_REPLY_MARKUP = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton('Back', callback_data=f'help_command')
+        InlineKeyboardButton('🫥 Back', callback_data=f'start_command')
     ],
 
 ])
 
 USER_ABOUT_MESSAGE = """
-- Website: [{base_site}](https://mdiskshortx.in/ref/rngharman)
-- Site Link {base_site} Current Linked API: {shortener_api}
-- Replace Channel Username: @{username}
-- Header Text: 
-{header_text}
-- Footer Text: 
-{footer_text}
-- Banner Image: {banner_image}
+✳️ Shortener Website: {base_site}
+✳️ {base_site} API: {shortener_api}
+✳️ Username: @{username}
+✳️ Header Text: {header_text}
+✳️ Footer Text: {footer_text}
+✳️ Banner Image: {banner_image}
 """
 
 
-SHORTENER_API_MESSAGE = """To add or update your Shortner Website API, 
-/set_api [api]
+SHORTENER_API_MESSAGE = """✅To add or update your Shortner Website API, `/shortener_api api`
             
-Ex: /api  5bc1058c2060d4247a90a1cc1d2aa829918ba08a
-Get API From [{base_site}](https://mdiskshortx.in/ref/rngharman)
-Current {base_site} API: {shortener_api}"""
+✳️Ex: `/shortener_api 6LZq851sXofffPHugiKQq`
+            
+✳️Shortener API of your preferred shortener API.
+✳️Current Website: {base_site}
+✳️Current Shortener API: `{shortener_api}`"""
 
-HEADER_MESSAGE = """Reply to the Header Text You Want
-This Text will be added to the top of every message caption or text
-For adding line break use \n
-To Remove Header Text: /header remove"""
+HEADER_MESSAGE = """✅Reply to the Header Text You Want
+✳️This Text will be added to the top of every message caption or text
+✳️To Remove Header Text: `/header remove`"""
 
-FOOTER_MESSAGE = """Reply to the Footer Text You Want
-This Text will be added to the bottom of every message caption or text
-For adding line break use \n
-To Remove Footer Text: /footer remove"""
+FOOTER_MESSAGE = """✅Reply to the Footer Text You Want
+✳️This Text will be added to the bottom of every message caption or text
+✳️To Remove Footer Text: `/footer remove`"""
 
-USERNAME_TEXT = """Hello Harman, I am shortnerfly.com, Bulk Link Converter Bot From Linked mdiskshortx.in Account,
-🌟 Type /channel (channel link or username)
-example:
-/channel @Mdiskshortx_bot
-Or
-/channel https://t.me/mdisk_shortx
-🤘 Hit 👉 /features To Know More Features Of This Bot.
-- Message @Mr_Rahul_Tk For More Help -"""
+USERNAME_TEXT = """✅Current Username: {username}
+✳️Usage: `/username your_username`
+✳️For just removing the username from the post: 
+`/username none`
+✳️This username will be automatically replaced with other usernames in the post
+✳️To remove current username, `/username remove`"""
 
-BANNER_IMAGE = """
-Usage: /banner_image image_url or reply to any Image with this command
-This image will be automatically replaced with other images in the post
-To remove custom image, /banner_image remove
-Eg: /banner_image https://telegra.ph/file/5e96340a91470256b387a.jpg"""
-
-
-BANNED_USER_TXT = """
-Usage: /ban [User ID]
-Usage: /unban [User ID]
-List of users that are banned:
-{users}
-"""
+BANNER_IMAGE = """✅Current Banner Image URL: {banner_image}
+✳️Usage: `/banner_image image_url`
+✳️This image will be automatically replaced with other images in the post
+✳️To remove custom image, `/banner_image remove`
+✳️Eg: `/banner_image https://www.nicepng.com/png/detail/436-4369539_movie-logo-film.png`"""
