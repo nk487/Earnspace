@@ -2,27 +2,39 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 START_MESSAGE = '''👋Hello, {}
-𝗜 𝗖𝗮𝗻 𝗖𝗼𝗻𝘃𝗲𝗿𝘁 𝗟𝗶𝗻𝗸 𝗧𝗼 𝗦𝗵𝗼𝗿𝘁𝗟𝗶𝗻𝗸. 𝗦𝗲𝗻𝗱 𝗠𝗲 𝗔𝗻𝘆 𝗣𝗼𝘀𝘁 𝗪𝗶𝘁𝗵 𝗟𝗶𝗻𝗸𝘀 𝗔𝗻𝗱 𝗜 𝗪𝗶𝗹𝗹 𝗦𝗵𝗼𝗿𝘁𝗲𝗻 𝗔𝗹𝗹 𝗟𝗶𝗻𝗸𝘀 𝗜𝗻 𝗜𝘁 𝗖𝗼𝗻𝘃𝗲𝗿𝘁 𝘁𝗼 𝗠𝗱𝗶𝘀𝗸𝘀𝗵𝗼𝗿𝘁𝗫.𝗶𝗻
-ℹ️ 𝗔𝗻𝗱 𝗵𝗼𝘄 𝘁𝗼 𝘂𝘀𝗲 𝘁𝗵𝗶𝘀 𝗯𝗼𝘁 𝗮𝗻𝗱 𝗰𝗼𝗺𝗺𝗮𝗻𝗱 𝘀𝗼 𝘄𝗮𝘁𝗰𝗵 𝗺𝘆 𝘃𝗶𝗱𝗲𝗼.
+ I am Mdiskshortx.in , Bulk Link Converter. I Can Convert Links Directly From Your mdiskshortX.in Account,
+    
+1. Go To 👉 https://Mdiskshortx.in/member/tools/api 
+
+
+2. Than Copy API Key
+3. Than Type /api than give a single space and than paste your API Key (see example to understand more...)
+
+/api<space>API Key 
+(See Example.👇)
+Example:
+/api 5bc1058c2060d4247a90a1cc1d2aa829918ba08a 
+
+Anyone who want to use any other shortner instead of Mdiskshortner than contact at 👉 @mr_Rahul_tk (all shortners support avilable.).
 '''
 
 
 HELP_MESSAGE = '''
-🤝 Help and bot not working Then contact me :- @𝗠𝗿_𝗥𝗮𝗵𝘂𝗹_𝗧𝗸 
-ℹ️ And how to use this bot and command so watch my video.
+🔗 𝙞𝙛 𝙮𝙤𝙪 𝙙𝙤𝙣'𝙩 𝙠𝙣𝙤𝙬 𝙝𝙤𝙬 𝙩𝙤 𝙘𝙤𝙣𝙣𝙚𝙘𝙩 𝙨𝙝𝙤𝙧𝙩𝙣𝙚𝙧 𝙖𝙣𝙙 𝙗𝙤𝙩 𝙏𝙝𝙚𝙣 𝙘𝙤𝙣𝙩𝙖𝙘𝙩 𝙢𝙚 :- @mr_Rahul_tk 
+
 :-
 '''
 
 
 ABOUT_TEXT = """
-📍 My all bot settings in bot command and my most best command list.
-/header - set header text and click on command check out more info.
-/footer - set footer text and click on command check out more info.
-/username - set username and click on command check out more info.
-/banner_image - set banner img and click on command check out more info.
-/me - your account information and on|off all settings.
-ℹ️ And how to use this bot and command so watch my video.
-:-
+💁 If you want any other changing in this bot
+
+➕ Hit 👉 /header - set header text  more info.
+➕ Hit 👉 /footer - set footer text and click on command check out more info.
+➕ Hit 👉 /username - set username 
+➕ Hit 👉 /banner_image - set banner img and click on command
+➕ Hit 👉 /me - your account information and on|off all settings.
+
 """
 
 
@@ -40,21 +52,21 @@ ABOUT_REPLY_MARKUP = InlineKeyboardMarkup([
         InlineKeyboardButton('Help', callback_data=f'help_command')
     ],
     [
-        InlineKeyboardButton('❌ Close', callback_data='delete')
+        InlineKeyboardButton('❌ 𝗰𝗹𝗼𝘀𝗲', callback_data='delete')
     ]
 ])
 
 START_MESSAGE_REPLY_MARKUP  = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton('𝗛𝗲𝗹𝗽', callback_data=f'help_command'),
+        InlineKeyboardButton('💁 𝗛𝗲𝗹𝗽', callback_data=f'help_command'),
         
     ],
         [
         InlineKeyboardButton('⚙️ 𝗦𝗲𝘁𝘁𝗶𝗻𝗴𝘀', callback_data='about_command'),
-        InlineKeyboardButton('❤️ Channel', url='https://t.me/mdisk_shortx')
+        InlineKeyboardButton('❤️ 𝗷𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹', url='https://t.me/mdisk_shortx')
     ],
             [
-        InlineKeyboardButton('♉️ 𝗖𝗼𝗻𝗻𝗲𝗰𝘁 𝗧𝗼 𝗠𝗱𝗶𝘀𝗸𝘀𝗵𝗼𝗿𝘁𝗫', url='https://mdiskshortX.in/member/tools/api'),
+        InlineKeyboardButton('🔗 𝘆𝗼𝘂𝗿 𝘀𝗵𝗼𝗿𝘁𝗻𝗲𝗿 𝗔𝗽𝗶 ', url='https://mdiskshortX.in/member/tools/api'),
     ],
 
 
@@ -70,7 +82,7 @@ BACK_REPLY_MARKUP = InlineKeyboardMarkup([
 
 USER_ABOUT_MESSAGE = """
 ✳️ Shortener Website: {base_site}
-✳️ {base_site} API: {shortener_api}
+✳️ {base_site} API: {api}
 ✳️ Username: @{username}
 ✳️ Header Text: {header_text}
 ✳️ Footer Text: {footer_text}
@@ -78,13 +90,13 @@ USER_ABOUT_MESSAGE = """
 """
 
 
-SHORTENER_API_MESSAGE = """✅To add or update your Shortner Website API, /shortener_api api
+SHORTENER_API_MESSAGE = """✅To add or update your Shortner Website API, /api api
             
-✳️Ex: /shortener_api 6LZq851sXofffPHugiKQq
+✳️Ex: /api 6LZq851sXofffPHugiKQq
             
 ✳️Shortener API of your preferred shortener API.
 ✳️Current Website: {base_site}
-✳️Current Shortener API: {shortener_api}"""
+✳️Current Shortener API: {api}"""
 
 HEADER_MESSAGE = """✅Reply to the Header Text You Want
 ✳️This Text will be added to the top of every message caption or text
