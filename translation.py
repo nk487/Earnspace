@@ -30,9 +30,12 @@ ABOUT_TEXT = """
 💁 If you want any other changing in this bot
 
 ➕ Hit 👉 /header - set header text  more info.
+
 ➕ Hit 👉 /footer - set footer text and click on command check out more info.
+
 ➕ Hit 👉 /username - set username 
 ➕ Hit 👉 /banner_image - set banner img and click on command
+
 ➕ Hit 👉 /me - your account information and on|off all settings.
 
 """
@@ -82,7 +85,7 @@ BACK_REPLY_MARKUP = InlineKeyboardMarkup([
 
 USER_ABOUT_MESSAGE = """
 ✳️ Shortener Website: {base_site}
-✳️ {base_site} API: {api}
+✳️ {base_site} API: {shortener_api}
 ✳️ Username: @{username}
 ✳️ Header Text: {header_text}
 ✳️ Footer Text: {footer_text}
@@ -90,13 +93,13 @@ USER_ABOUT_MESSAGE = """
 """
 
 
-SHORTENER_API_MESSAGE = """✅To add or update your Shortner Website API, /api api
-            
-✳️Ex: /api 6LZq851sXofffPHugiKQq
-            
+SHORTENER_API_MESSAGE = """✅To add or update your Shortner Website API, /shortener_api api
+            
+✳️Ex: /shortener_api 6LZq851sXofffPHugiKQq
+            
 ✳️Shortener API of your preferred shortener API.
 ✳️Current Website: {base_site}
-✳️Current Shortener API: {api}"""
+✳️Current Shortener API: {shortener_api}"""
 
 HEADER_MESSAGE = """✅Reply to the Header Text You Want
 ✳️This Text will be added to the top of every message caption or text
