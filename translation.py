@@ -2,25 +2,25 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 START_MESSAGE = '''👋Hello, {}
- I am Mdiskshortx.in , Bulk Link Converter. I Can Convert Links Directly From Your mdiskshortX.in Account,
+ I am Urlbharat.xyz , Bulk Link Converter. I Can Convert Links Directly From Your Urlbharat Account,
     
-1. Go To 👉 https://Mdiskshortx.in/member/tools/api 
+1. Go To 👉 https://urlbharat.xyz/member/tools/api 
 
 
 2. Than Copy API Key
-3. Than Type /api than give a single space and than paste your API Key (see example to understand more...)
+3. Than Type /shortener_api than give a single space and than paste your API Key (see example to understand more...)
 
-/api<space>API Key 
+/shortener_api<space> API Key 
 (See Example.👇)
 Example:
-/api 5bc1058c2060d4247a90a1cc1d2aa829918ba08a 
+/shortener_api 5bc1058c2060d4247a90a1cc1d2aa829918ba08a 
 
-Anyone who want to use any other shortner instead of Mdiskshortner than contact at 👉 @mr_Rahul_tk (all shortners support avilable.).
+Anyone who want to use any other shortner instead of Earnspace than contact at 👉 @nitish7691 (all support avilable.).
 '''
 
 
 HELP_MESSAGE = '''
-🔗 𝙞𝙛 𝙮𝙤𝙪 𝙙𝙤𝙣'𝙩 𝙠𝙣𝙤𝙬 𝙝𝙤𝙬 𝙩𝙤 𝙘𝙤𝙣𝙣𝙚𝙘𝙩 𝙨𝙝𝙤𝙧𝙩𝙣𝙚𝙧 𝙖𝙣𝙙 𝙗𝙤𝙩 𝙏𝙝𝙚𝙣 𝙘𝙤𝙣𝙩𝙖𝙘𝙩 𝙢𝙚 :- @mr_Rahul_tk 
+🔗 𝙞𝙛 𝙮𝙤𝙪 𝙙𝙤𝙣'𝙩 𝙠𝙣𝙤𝙬 𝙝𝙤𝙬 𝙩𝙤 𝙘𝙤𝙣𝙣𝙚𝙘𝙩 𝙨𝙝𝙤𝙧𝙩𝙣𝙚𝙧 𝙖𝙣𝙙 𝙗𝙤𝙩 𝙏𝙝𝙚𝙣 𝙘𝙤𝙣𝙩𝙖𝙘𝙩 𝙢𝙚 :- @nitish7691
 
 :-
 '''
@@ -66,10 +66,10 @@ START_MESSAGE_REPLY_MARKUP  = InlineKeyboardMarkup([
     ],
         [
         InlineKeyboardButton('⚙️ 𝗦𝗲𝘁𝘁𝗶𝗻𝗴𝘀', callback_data='about_command'),
-        InlineKeyboardButton('❤️ 𝗷𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹', url='https://t.me/mdisk_shortx')
+        InlineKeyboardButton('❤️ 𝗷𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹', url='https://t.me/urlbharat')
     ],
             [
-        InlineKeyboardButton('🔗 𝘆𝗼𝘂𝗿 𝘀𝗵𝗼𝗿𝘁𝗻𝗲𝗿 𝗔𝗽𝗶 ', url='https://mdiskshortX.in/member/tools/api'),
+        InlineKeyboardButton('🔗 Connect To Urlbharat  ', url='https://urlbharat.xyz/member/tools/api'),
     ],
 
 
